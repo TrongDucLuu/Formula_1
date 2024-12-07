@@ -79,13 +79,13 @@ Confluent Kafka hosted on AWS EC2, paired with SingleStore as our operational da
 - **Confluent Kafka** serves as our message broker because it excels at handling high-throughput, real-time data streams with minimal latency.
 - Formula 1 telemetry generates thousands of data points per second across multiple cars especially the telemetry metrics like speed , throttle metrics, and Kafka's publish-subscribe model perfectly suits this use case. The platform's robust partitioning and fault tolerance ensure we never miss critical race data. Four topics in my producer that is consumed by singlestore pipelines
     
-    ![Image 06-12-24 at 8.02 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/1d3facbd-76a9-430c-8fd0-0cd65f6ec728/Image_06-12-24_at_8.02_PM.jpeg)
+  ![Streaming](./images/realtime_streaming_pipeline_image_1.jpeg)
     
     ## **SingleStore**
     
     **SingleStore** was selected as our operational database due to its unique ability to handle both real-time data ingestion and analytical queries simultaneously. Its columnar storage format and vector processing capabilities make it ideal for processing time-series telemetry data while maintaining sub-second query response times for our dashboards. Serving as both OLTP and OLAP database in one, which can perform high fidelity data ingests, analysis over millions of rows with ms latency  
     
-    ![Image 06-12-24 at 8.05 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/a077e55d-563c-4e24-840b-9984d05027cc/65a9c105-720c-43e4-80f1-b0f49a519065.png)
+    ![Singlesore](./images/)
     
 - **AWS EC2** provides the scalable infrastructure needed to handle variable workloads during race weekends versus off-peak periods. The cloud deployment ensures high availability and enables easy scaling during peak racing events.
 

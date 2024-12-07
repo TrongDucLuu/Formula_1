@@ -353,12 +353,12 @@ My Transformations on a high level include:
 
 
 
-## Data Visualization
+# Data Visualization
 ### Historical Dashboards:
 
-- F1 (LAP on LAP analysis)
+## F1 (LAP on LAP analysis)
 
-     Dashboard_link : https://formula1analytics.grafana.net/goto/4iHfoaVNg?orgId=1
+Dashboard_link : https://formula1analytics.grafana.net/goto/4iHfoaVNg?orgId=1
 
 ![Screen Recording 2024-12-07 at 8 17 21 PM](https://github.com/user-attachments/assets/d682bed0-91b1-4d1e-8793-34f9ed167188)
 
@@ -367,21 +367,25 @@ My Transformations on a high level include:
 - How does sector performance  affect position changes ?
 - How do pit-out laps affect overall race strategy?
 
-- F1 Telemetry Analysis (Historical)
+## F1 Telemetry Analysis (Historical)
+
 ![Screen Recording 2024-12-07 at 8 21 57 PM](https://github.com/user-attachments/assets/53da5c5a-9a8b-4d45-b53f-84c5d90d950e)
 
-  
-    - How do drivers use DRS throughout the race?
-    - How do braking patterns differ between drivers?
-    - How does speed, throttle, drs patterns differ between multiple drivers
+- How do drivers use DRS throughout the race?
+- How do braking patterns differ between drivers?
+- How does speed, throttle, drs patterns differ between multiple drivers
     
-- F1 Tyre preference and weather impact
-    - What's the optimal tire life for each compound at different circuits?
-    - How do different teams manage their tire strategies?
-    - How does track temperature affect tire strategy?
-    - What's the correlation between humidity and wet conditions effect tire performance?
+## F1 Tyre preference and weather impact
+
+
+- What's the optimal tire life for each compound at different circuits?
+- How do different teams manage their tire strategies?
+- How does track temperature affect tire strategy?
+- What's the correlation between humidity and wet conditions effect tire performance?
 
 ## Realtime Dashboard
+
+![Screen Recording 2024-12-07 at 8 26 14 PM](https://github.com/user-attachments/assets/6550eb95-158f-418e-8f53-182be734128e)
 
 - Realtime replay of specific portion of the race
     - Drivers race dashboard , showing speed, braking and drs in realtime
@@ -390,23 +394,3 @@ My Transformations on a high level include:
 
 
 
-
-```sql
-version: 2
-
-sources:
-  - name: HITESH
-    database: DATAEXPERT_STUDENT
-    schema: HITESH
-    tables:
-      - name: F1_POSITION
-      - name: F1_LAPS
-      - name : F1_CAR_DATA
-      - name : F1_INTERVALS
-      - name : F1_PIT
-      - name : F1_STINT
-      - name : F1_MEETINGS
-      - name : F1_SESSIONS
-      - name : F1_DRIVERS
-
-```

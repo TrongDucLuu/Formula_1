@@ -36,7 +36,7 @@ Formula 1 racing represents the pinnacle of motorsport technology, where split-s
 
 This has been a passion project of mine since long and i hope to keep improving and deploying it down the line for anyone to use and make sense of what factors led to the Race outcome
 
-![High Level Architecture](./images/High_level_architecture_diagram_image_1.jpeg)
+![Motivation](./images/Motivation_image_1.jpeg)
 
 # Project Scope
 
@@ -66,7 +66,7 @@ This has been a passion project of mine since long and i hope to keep improving 
 
 ## High level Architecture Diagram
 
-![Image 06-12-24 at 8.31 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/1184628d-fa69-4644-9fec-52b55858ca47/Image_06-12-24_at_8.31_PM.jpeg)
+![High Level Architecture](./images/High_level_architecture_diagram_image_1.jpeg)
 
 ## Technology choices:
 

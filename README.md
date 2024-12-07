@@ -362,6 +362,8 @@ My Transformations on a high level include:
 
 ![Screen Recording 2024-12-07 at 8 17 21 PM](https://github.com/user-attachments/assets/d682bed0-91b1-4d1e-8793-34f9ed167188)
 
+![Screen Recording 2024-12-07 at 8 17 21 PM](https://vimeo.com/1037044458?share=copy)
+
 - How do gaps between drivers evolve during the race?
 - Compare race pace vs qualifying pace per sector for a driver ?
 - How does sector performance  affect position changes ?

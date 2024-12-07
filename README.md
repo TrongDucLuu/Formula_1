@@ -362,14 +362,15 @@ My Transformations on a high level include:
 
 ![Screen Recording 2024-12-07 at 8 17 21 PM](https://github.com/user-attachments/assets/d682bed0-91b1-4d1e-8793-34f9ed167188)
 
-![Screen Recording](https://vimeo.com/1037044458?share=copy)
-
 - How do gaps between drivers evolve during the race?
 - Compare race pace vs qualifying pace per sector for a driver ?
 - How does sector performance  affect position changes ?
 - How do pit-out laps affect overall race strategy?
 
 - F1 Telemetry Analysis (Historical)
+![Screen Recording 2024-12-07 at 8 21 57 PM](https://github.com/user-attachments/assets/53da5c5a-9a8b-4d45-b53f-84c5d90d950e)
+
+  
     - How do drivers use DRS throughout the race?
     - How do braking patterns differ between drivers?
     - How does speed, throttle, drs patterns differ between multiple drivers

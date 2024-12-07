@@ -349,11 +349,12 @@ My Transformations on a high level include:
 
 ![validation_1](./images/validation_1.jpeg)
 
+![Uploading Screen Recording 2024-12-07 at 8.21.57 PM.gif…]()
 
 
 ## Data Visualization
 
-![test](https://i.makeagif.com/media/12-07-2024/ahUliF.gif)
+
 
 ```sql
 version: 2

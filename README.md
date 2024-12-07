@@ -353,6 +353,8 @@ My Transformations on a high level include:
 
 ## Data Visualization
 
+![dashboard_1](https://gifyu.com/image/SJ7ev)
+
 ```sql
 version: 2
 

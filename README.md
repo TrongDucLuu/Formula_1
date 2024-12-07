@@ -85,7 +85,7 @@ Confluent Kafka hosted on AWS EC2, paired with SingleStore as our operational da
     
     **SingleStore** was selected as our operational database due to its unique ability to handle both real-time data ingestion and analytical queries simultaneously. Its columnar storage format and vector processing capabilities make it ideal for processing time-series telemetry data while maintaining sub-second query response times for our dashboards. Serving as both OLTP and OLAP database in one, which can perform high fidelity data ingests, analysis over millions of rows with ms latency  
     
-    ![Singlesore](./images/)
+    ![Singlesore](./images/Singlestore_image_1.png)
     
 - **AWS EC2** provides the scalable infrastructure needed to handle variable workloads during race weekends versus off-peak periods. The cloud deployment ensures high availability and enables easy scaling during peak racing events.
 
@@ -249,7 +249,7 @@ The processes have the following stages of data architecture:
 
 ## Data Ingestion
 
-![Image 06-12-24 at 8.42 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/2ad164da-86df-4f0f-8639-1d01084704ac/Image_06-12-24_at_8.42_PM.jpeg)
+ ![Ingestion](./images/Airflow_image.jpeg)
 
 I made sure during my ingestion these 5 properties are always maintained
 
@@ -258,36 +258,36 @@ I made sure during my ingestion these 5 properties are always maintained
 - No two non-unique recods are added to the table also ensuring upserts only
 - Created a dynamic since the structure of the statement remains same
     
-    ![Image 06-12-24 at 9.04 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/02fdc42a-1002-4061-87fa-4305c3307bfa/Image_06-12-24_at_9.04_PM.jpeg)
-    
-    ![Image 06-12-24 at 9.05 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/92296ff2-8356-4b9a-a427-2061e59cd4ff/Image_06-12-24_at_9.05_PM.jpeg)
+    ![Idempodency_1](./images/Idempodency_image_1.jpeg)    
+    ![Idempodency_1](./images/Idempodency_image_2.jpeg)    
     
 
 ## API call retires and Fallbacks
 
 - So API’s are unreliable sometimes, hence having retry feature to make sure, no data is left behind during ingest
     
-    ![Image 06-12-24 at 9.12 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/dacbce70-d682-485a-907b-c9f70367a55d/Image_06-12-24_at_9.12_PM.jpeg)
+     ![API_retires](./images/Api_calls_retires.jpeg) 
     
 - Handling high frequency data
     - For telemetry high frequency data, i broke my api calls into 5 min chunks
     - Let’s say the API still produces too much data to handle, then it fallback into 1/2 the window size and then continues to maintain 5 min windows for the next call
         
-        ![Image 06-12-24 at 8.55 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/e91140bf-b3e6-45b6-a50c-ce8bc52dd484/Image_06-12-24_at_8.55_PM.jpeg)
+     ![API_retires](./images/handling_high_frequency_data.jpeg) 
         
 
 ## Always ingest into a temp staging table
 
 - Made sure the production table is not impacted by ingestion issues (always ingesting to a staging table and dropping it immediately after succesful merge)
     
-    ![Image 06-12-24 at 8.49 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/907c8249-5113-4bdc-8e7d-febfb71b2cac/Image_06-12-24_at_8.49_PM.jpeg)
+     ![ingest](./images/Always_ingest_into_temp.jpeg)
     
 
 ## Compute resources ( save costs)
 
 - There is no Race every single day so i made sure i don’t exhaust the compute resources on a non race day
     
-    ![Image 06-12-24 at 8.44 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/f277cc50-e3cf-407c-8d78-5cb6766e3e47/Image_06-12-24_at_8.44_PM.jpeg)
+    ![compute](./images/compute_recources.jpeg)
+  
     
 
 ## Data Transformation
@@ -298,7 +298,8 @@ These are all my data transformations
 - Prefixed with “f1_” are my data marts and used in final dashboards
 - Prefixed with “int_” are my intermediate models used a lot in multiple marts as well
     
-    ![Image 07-12-24 at 6.02 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/1eb8ba28-fca1-47b1-aecc-3e27920cce37/Image_07-12-24_at_6.02_PM.jpeg)
+    ![data_transformations](./images/data_transformations.jpeg)
+  
     
 
 My Transformations on a high level include:
@@ -322,11 +323,12 @@ My Transformations on a high level include:
     
     - Weather (Computing averages and Categorizing my dashboards)
         
-        ![Image 07-12-24 at 6.13 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/bb99c414-e048-4183-bfc9-626073aeb037/Image_07-12-24_at_6.13_PM.jpeg)
+       ![Intermediate_1](./images/intermediate_models_1.jpeg)
+      
         
     - Computing lap wise start and end positions
         
-        ![Image 07-12-24 at 6.15 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/c63047f3-0644-4c1a-bbf2-77d64322c563/Image_07-12-24_at_6.15_PM.jpeg)
+        ![Intermediate_2](./images/intermediate_models_2.jpeg)
         
         ## Marts (`dbt_project/models/marts`)
         
@@ -334,17 +336,18 @@ My Transformations on a high level include:
         
         - There were only position changes , so i had to fill positions for the laps where there was no position change , to understand how the position evolved
             
-            ![Image 07-12-24 at 6.22 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/b1426598-3365-4ef2-8cf3-e9e275ed9790/Image_07-12-24_at_6.22_PM.jpeg)
+            ![marts_1](./images/marts_1.jpeg)
+          
             
         - A mart for dashboard filters as well
+            ![marts_2](./images/marts_2.jpeg)
             
-            ![Image 07-12-24 at 6.23 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/4be70f81-3ec9-4d21-bf15-f3e20e64c0a8/Image_07-12-24_at_6.23_PM.jpeg)
             
     
 
 ## Data Validation
 
-![Image 07-12-24 at 6.19 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/3d8acfbb-b3a9-4c9e-b434-052e2a7be4b5/414b3a69-5465-4ae5-8b39-5e4fe9ecda86/Image_07-12-24_at_6.19_PM.jpeg)
+![validation_1](./images/validation_1.jpeg)
 
 ## Data Storage
 

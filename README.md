@@ -378,6 +378,8 @@ Dashboard_link : https://formula1analytics.grafana.net/goto/4iHfoaVNg?orgId=1
 ## F1 Tyre preference and weather impact
 
 
+![Screen Recording 2024-12-07 at 8 26 14 PM](https://github.com/user-attachments/assets/6550eb95-158f-418e-8f53-182be734128e)
+
 - What's the optimal tire life for each compound at different circuits?
 - How do different teams manage their tire strategies?
 - How does track temperature affect tire strategy?
@@ -385,7 +387,6 @@ Dashboard_link : https://formula1analytics.grafana.net/goto/4iHfoaVNg?orgId=1
 
 ## Realtime Dashboard
 
-![Screen Recording 2024-12-07 at 8 26 14 PM](https://github.com/user-attachments/assets/6550eb95-158f-418e-8f53-182be734128e)
 
 - Realtime replay of specific portion of the race
     - Drivers race dashboard , showing speed, braking and drs in realtime

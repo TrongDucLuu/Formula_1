@@ -349,7 +349,7 @@ My Transformations on a high level include:
 
 ![validation_1](./images/validation_1.jpeg)
 
-## Data Storage
+
 
 ## Data Visualization
 

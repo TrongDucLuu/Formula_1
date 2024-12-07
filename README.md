@@ -358,8 +358,6 @@ My Transformations on a high level include:
 
 ## F1 (LAP on LAP analysis)
 
-Dashboard_link : https://formula1analytics.grafana.net/goto/4iHfoaVNg?orgId=1
-
 ![Screen Recording 2024-12-07 at 8 17 21 PM](https://github.com/user-attachments/assets/d682bed0-91b1-4d1e-8793-34f9ed167188)
 
 - How do gaps between drivers evolve during the race?

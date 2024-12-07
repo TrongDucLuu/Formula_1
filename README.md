@@ -1,4 +1,4 @@
-# Formula_1# 🏎️  F1 Insights: Real-Time Replay & Historical Analytics 🏁
+# 🏎️  F1 Insights: Real-Time Replay & Historical Analytics 🏁
 
 # 📖 Project Overview
 

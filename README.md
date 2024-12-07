@@ -353,7 +353,7 @@ My Transformations on a high level include:
 
 ## Data Visualization
 
-![dashboard_1](https://gifyu.com/image/SJ7ev)
+![ahUliF](https://i.makeagif.com/media/12-07-2024/ahUliF.gif)
 
 ```sql
 version: 2

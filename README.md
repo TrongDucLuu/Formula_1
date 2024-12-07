@@ -328,7 +328,7 @@ My Transformations on a high level include:
         
     - Computing lap wise start and end positions
         
-        ![Intermediate_2](./images/intermediate_models_2.jpeg)
+        ![Intermediate_2](./images/intrmediate_models_2.jpeg)
         
         ## Marts (`dbt_project/models/marts`)
         

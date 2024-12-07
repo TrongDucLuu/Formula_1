@@ -349,7 +349,8 @@ My Transformations on a high level include:
 
 ![validation_1](./images/validation_1.jpeg)
 
-![Uploading Screen Recording 2024-12-07 at 8.21.57 PM.gif…]()
+![Screen Recording 2024-12-07 at 8 17 21 PM](https://github.com/user-attachments/assets/d682bed0-91b1-4d1e-8793-34f9ed167188)
+
 
 
 ## Data Visualization

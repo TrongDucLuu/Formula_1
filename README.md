@@ -358,7 +358,7 @@ My Transformations on a high level include:
 
 ## F1 (LAP on LAP analysis)
 
-![Screen Recording 2024-12-07 at 8 17 21 PM](https://giphy.com/gifs/66Z2Y95DvyohZjLj8g)
+![Screen Recording 2024-12-07 at 8 17 21 PM](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTBoejVjNDhmeHk4bnZrZGpmdGIycDdvaGh6ZG1majU3NWZteXR3YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/66Z2Y95DvyohZjLj8g/giphy.gif)
 
 - How do gaps between drivers evolve during the race?
 - Compare race pace vs qualifying pace per sector for a driver ?

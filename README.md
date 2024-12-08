@@ -90,7 +90,7 @@ Confluent Kafka hosted on AWS EC2, paired with SingleStore as our operational da
     **SingleStore** was selected as our operational database due to its unique ability to handle both real-time data ingestion and analytical queries simultaneously. Its columnar storage format and vector processing capabilities make it ideal for processing time-series telemetry data while maintaining sub-second query response times for our dashboards. Serving as both OLTP and OLAP database in one, which can perform high fidelity data ingests, analysis over millions of rows with ms latency  
     Process Flow:
 
-     ----   kafka_flowchat here
+    ![images_flowcta](./images/kafka_flowchat.jpeg)
 
     ![Singlesore](./images/Singlestore_image_1.png)
     

@@ -79,6 +79,7 @@ The real-time component leverages
 Confluent Kafka hosted on AWS EC2, paired with SingleStore as our operational database. This architecture was chosen for several compelling reasons:
 
 - **Confluent Kafka** serves as our message broker because it excels at handling high-throughput, real-time data streams with minimal latency.
+  
     - Formula 1 telemetry generates thousands of data points per second across multiple cars especially the telemetry metrics like speed , throttle metrics, and Kafka's publish-subscribe model perfectly suits this use case.
     - The platform's robust partitioning and fault tolerance ensure we never miss critical race data. Four topics in my producer that is consumed by singlestore pipelines
     
@@ -93,7 +94,7 @@ Confluent Kafka hosted on AWS EC2, paired with SingleStore as our operational da
 
     ![Singlesore](./images/Singlestore_image_1.png)
     
-## **AWS EC2** provides the scalable infrastructure needed to handle variable workloads ( t3.micro )
+## **AWS EC2** ( t3.micro )
 
 - It has a Flask listener that does the following
     - Listens via port 5000  →  /run-and-redirect url (Triggered from Grafana Cloud dashboard )→ calls a Python (Producer) script with necessary parameters  →  redirects to my Grafana ec2 deployment

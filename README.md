@@ -98,33 +98,33 @@ Confluent Kafka hosted on AWS EC2, paired with SingleStore as our operational da
 
 - It has a Flask listener that does the following
     - Listens via port 5000  →  /run-and-redirect url (Triggered from Grafana Cloud dashboard )→ calls a Python (Producer) script with necessary parameters  →  redirects to my Grafana ec2 deployment
-      
- ```python
-        
-        app = Flask(__name__)
-        
-        @app.route('/run-and-redirect', methods=['GET'])
-        def run_script():
-
-      cmd = [
-          'python3',
-          '/home/ubuntu/kafka_producer_v6_cloud.py',
-          '--param1', start_time,
-          '--param2', end_time,
-          '--session', session,
-          '--data-types', 'car',
-          '--driver', driver
-      ]
-
-      logger.info(f"Running command: {' '.join(cmd)}")
-      subprocess.Popen(cmd)
-
-      redirect_url = f'http://13.60.222.132:3000/d/f1-telemetry/f1-real-time-telemetry?orgId=1&from={start_time.replace("T", " ")}&to={end_time.replace("T", " ")}&timezone=browser&var-driver={driver}&var-session={session}&refresh=1s'
-
-      return redirect(redirect_url)
-
-..........
-```
+          
+     ```python
+            
+            app = Flask(__name__)
+            
+            @app.route('/run-and-redirect', methods=['GET'])
+            def run_script():
+    
+          cmd = [
+              'python3',
+              '/home/ubuntu/kafka_producer_v6_cloud.py',
+              '--param1', start_time,
+              '--param2', end_time,
+              '--session', session,
+              '--data-types', 'car',
+              '--driver', driver
+          ]
+    
+          logger.info(f"Running command: {' '.join(cmd)}")
+          subprocess.Popen(cmd)
+    
+          redirect_url = f'http://13.60.222.132:3000/d/f1-telemetry/f1-real-time-telemetry?orgId=1&from={start_time.replace("T", " ")}&to={end_time.replace("T", " ")}&timezone=browser&var-driver={driver}&var-session={session}&refresh=1s'
+    
+          return redirect(redirect_url)
+    
+    ..........
+    ```
 
 ### Historical Trend Analysis
 

@@ -384,6 +384,7 @@ My Transformations on a high level include:
 
 ## Realtime Dashboard
 
+![Realtime](https://s7.gifyu.com/images/SJl9L.gif) 
 
 - Realtime replay of specific portion of the race
     - Drivers race dashboard , showing speed, braking and drs in realtime

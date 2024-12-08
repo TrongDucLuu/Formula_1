@@ -2,8 +2,6 @@
 
 # 📖 Project Overview
 
-![CHECK](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDM2b2xjN2YwbXE0eGR6aHhhYjg0cHozczVubzRla3Nva3pmdGttOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ju0l3ovz0KMlb2WGnr/giphy.gif)
-
 A real-time Formula 1 telemetry system and historical data analysis system that captures, processes, and visualizes car data during race sessions, enabling both live replay and historical analysis.
 
 The project involves a two fold analysis approach
@@ -360,7 +358,7 @@ My Transformations on a high level include:
 
 ## F1 (LAP on LAP analysis)
 
-![Screen Recording 2024-12-07 at 8 17 21 PM](https://github.com/user-attachments/assets/d682bed0-91b1-4d1e-8793-34f9ed167188)
+![Screen Recording 2024-12-07 at 8 17 21 PM](https://giphy.com/gifs/66Z2Y95DvyohZjLj8g)
 
 - How do gaps between drivers evolve during the race?
 - Compare race pace vs qualifying pace per sector for a driver ?
@@ -376,7 +374,6 @@ My Transformations on a high level include:
 - How does speed, throttle, drs patterns differ between multiple drivers
     
 ## F1 Tyre preference and weather impact
-
 
 ![Screen Recording 2024-12-07 at 8 26 14 PM](https://github.com/user-attachments/assets/6550eb95-158f-418e-8f53-182be734128e)
 

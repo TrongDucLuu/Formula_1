@@ -495,5 +495,24 @@ My Transformations on a high level include:
     - Realtime view of your favourite driver
     - Works during the race as well
 
+## Challenges and FAQs
 
-
+    Why Grafana on EC2? 
+    
+    - Grafana does not support 1s natively on cloud it can go as low as 5s refresh , whats the fun if there is no 1s refresh in Formula 1 , hence i deployed my grafana instance changes min_refresh_interval in my grafana.ini file , hosted on the instance
+    
+    Why Two Grafana’s (Deployed on Ec2 and Grafana cloud)
+    
+    - I wanted to keep the historical data containing millions of rows in Grafana Cloud, easy cloud snowflake connection , sharing and fast and realible, can make as many filters and changes since it’s just a connection to Snowflake
+    - Grafana Ec2 to achieve 1s latency and then connect Grafana cloud button to redirect to my Grafana on Ec2
+    
+    Why SingleStore pipelines ?
+    
+    - Extremely fast ingest
+    - Has a shared Tier free forever
+    - ms latency allowing me perform hig fedility queries in my Grafana dashboards
+    
+    How does Snowflake dbt and airflow fit in the workflow ? 
+    
+    - All of trend analysis, tyre considerations, lap on lap position change, driver riding patterns (Anything that requires a lot of historical data to view holistically)
+    

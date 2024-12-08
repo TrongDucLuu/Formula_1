@@ -79,17 +79,51 @@ The real-time component leverages
 Confluent Kafka hosted on AWS EC2, paired with SingleStore as our operational database. This architecture was chosen for several compelling reasons:
 
 - **Confluent Kafka** serves as our message broker because it excels at handling high-throughput, real-time data streams with minimal latency.
-- Formula 1 telemetry generates thousands of data points per second across multiple cars especially the telemetry metrics like speed , throttle metrics, and Kafka's publish-subscribe model perfectly suits this use case. The platform's robust partitioning and fault tolerance ensure we never miss critical race data. Four topics in my producer that is consumed by singlestore pipelines
+    - Formula 1 telemetry generates thousands of data points per second across multiple cars especially the telemetry metrics like speed , throttle metrics, and Kafka's publish-subscribe model perfectly suits this use case.
+    - The platform's robust partitioning and fault tolerance ensure we never miss critical race data. Four topics in my producer that is consumed by singlestore pipelines
     
   ![Streaming](./images/realtime_streaming_pipeline_image_1.jpeg)
     
     ## **SingleStore**
     
     **SingleStore** was selected as our operational database due to its unique ability to handle both real-time data ingestion and analytical queries simultaneously. Its columnar storage format and vector processing capabilities make it ideal for processing time-series telemetry data while maintaining sub-second query response times for our dashboards. Serving as both OLTP and OLAP database in one, which can perform high fidelity data ingests, analysis over millions of rows with ms latency  
-    
+    Process Flow:
+
+     ----   kafka_flowchat here
+
     ![Singlesore](./images/Singlestore_image_1.png)
     
-- **AWS EC2** provides the scalable infrastructure needed to handle variable workloads during race weekends versus off-peak periods. The cloud deployment ensures high availability and enables easy scaling during peak racing events.
+## **AWS EC2** provides the scalable infrastructure needed to handle variable workloads ( t3.micro )
+
+- It has a Flask listener that does the following
+    - Listens via port 5000  →  /run-and-redirect url (Triggered from Grafana Cloud dashboard )→ calls a Python (Producer) script with necessary parameters  →  redirects to my Grafana ec2 deployment
+      
+ ```python
+        
+        app = Flask(__name__)
+        
+        @app.route('/run-and-redirect', methods=['GET'])
+        def run_script():
+
+      cmd = [
+          'python3',
+          '/home/ubuntu/kafka_producer_v6_cloud.py',
+          '--param1', start_time,
+          '--param2', end_time,
+          '--session', session,
+          '--data-types', 'car',
+          '--driver', driver
+      ]
+
+      logger.info(f"Running command: {' '.join(cmd)}")
+      subprocess.Popen(cmd)
+
+      redirect_url = f'http://13.60.222.132:3000/d/f1-telemetry/f1-real-time-telemetry?orgId=1&from={start_time.replace("T", " ")}&to={end_time.replace("T", " ")}&timezone=browser&var-driver={driver}&var-session={session}&refresh=1s'
+
+      return redirect(redirect_url)
+
+..........
+```
 
 ### Historical Trend Analysis
 

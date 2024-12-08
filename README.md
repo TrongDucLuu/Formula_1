@@ -375,7 +375,7 @@ My Transformations on a high level include:
     
 ## F1 Tyre preference and weather impact
 
-![Screen Recording 2024-12-07 at 8 26 14 PM](https://github.com/user-attachments/assets/6550eb95-158f-418e-8f53-182be734128e)
+![Screen Recording 2024-12-07 at 8 26 14 PM](https://s7.gifyu.com/images/SJdGt.gif)
 
 - What's the optimal tire life for each compound at different circuits?
 - How do different teams manage their tire strategies?

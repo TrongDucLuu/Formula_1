@@ -367,7 +367,7 @@ My Transformations on a high level include:
 
 ## F1 Telemetry Analysis (Historical)
 
-![Screen Recording 2024-12-07 at 8 21 57 PM](https://github.com/user-attachments/assets/53da5c5a-9a8b-4d45-b53f-84c5d90d950e)
+![Screen Recording 2024-12-07 at 8 21 57 PM](https://s13.gifyu.com/images/SJdGM.gif)
 
 - How do drivers use DRS throughout the race?
 - How do braking patterns differ between drivers?

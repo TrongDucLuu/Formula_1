@@ -13,6 +13,8 @@ The system serves two primary analytical purposes:
 
 ### Real-Time Race Replay
 
+![Realtime](https://s7.gifyu.com/images/SJl9L.gif) 
+
 Using live telemetry data, the system reconstructs race sessions in real-time, allowing viewers to experience the race as it unfolds. This feature provides deep insights into crucial moments by visualizing:
 
 - Driver performance through speed, throttle, and brake data

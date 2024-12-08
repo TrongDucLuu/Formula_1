@@ -83,7 +83,7 @@ Confluent Kafka hosted on AWS EC2, paired with SingleStore as our operational da
     - Formula 1 telemetry generates thousands of data points per second across multiple cars especially the telemetry metrics like speed , throttle metrics, and Kafka's publish-subscribe model perfectly suits this use case.
     - The platform's robust partitioning and fault tolerance ensure we never miss critical race data. Four topics in my producer that is consumed by singlestore pipelines
     
-  ![Streaming](./images/realtime_streaming_pipeline_image_1.jpeg)
+      ![Streaming](./images/realtime_streaming_pipeline_image_1.jpeg)
     
     ## **SingleStore**
     

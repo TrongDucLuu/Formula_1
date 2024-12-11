@@ -1,7 +1,7 @@
 # 🏎️  F1 Insights: Real-Time Replay & Historical Analytics 🏁
 
 # 📖 Project Overview
-Click below for the video Overview 👇 ▶️ 
+Click below image or this link for a video Overview 👇 ▶️ 
 Video explenation Link: https://vimeo.com/1038191478
 
 [![Video Title](https://vumbnail.com/1038191478.jpg)](https://vimeo.com/1038191478)

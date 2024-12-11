@@ -11,7 +11,7 @@ The project involves a two fold analysis approach
 
 The system serves two primary analytical purposes:
 
-[![Watch the video](https://vimeo.com/1038191478?share=copy)
+<div style="padding:64.9% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1038191478?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Formula 1 data analysis | Grafana , Airflow, SingleStore dbt , AWS and Snowflake"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ### Real-Time Race Replay
 

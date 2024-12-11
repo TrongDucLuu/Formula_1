@@ -5,7 +5,7 @@ Click below image or this link for a video Overview 👇 ▶️
 
 Project overview explanation Link: [Click Here ](https://vimeo.com/1038211767)
 
-[![Video Title 2](https://vimeo.com/1038211767.jpg)](https://vimeo.com/1038211767)
+[![Video Title 2](https://vumbnail.com/1038211767.jpg)](https://vimeo.com/1038211767)
 
 --------------------------------------------------------------
 Click below image or this link for a dashboard Overview 👇 ▶️ 

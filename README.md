@@ -3,11 +3,14 @@
 # 📖 Project Overview
 Click below image or this link for a video Overview 👇 ▶️ 
 
-Video explenation Link: https://vimeo.com/1038191478
+Video explanation Link: https://vimeo.com/1038191478
 
 [![Video Title](https://vumbnail.com/1038191478.jpg)](https://vimeo.com/1038191478)
 
-Dashboards explanation Link: https://vimeo.com/1038203523?share=copy
+--------------------------------------------------------------
+Click below image or this link for a video Overview 👇 ▶️ 
+
+Dashboards explanation Link: https://vimeo.com/1038203523?
 
 [![Video Title](https://vumbnail.com/1038203523.jpg)](https://vimeo.com/1038203523)
 

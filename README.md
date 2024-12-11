@@ -2,7 +2,6 @@
 
 # 📖 Project Overview
 Click below for the video Overview 👇
-[![Video Title](https://vumbnail.com/1038191478.jpg)](https://vimeo.com/1038191478)
 
 [![Vimeo Video](https://vumbnail.com/1038191478.jpg)](https://vimeo.com/1038191478)
 
@@ -43,7 +42,6 @@ Formula 1 racing represents the pinnacle of motorsport technology, where split-s
 
 This has been a passion project of mine since long and i hope to keep improving and deploying it down the line for anyone to use and make sense of what factors led to the Race outcome
 
-![Motivation](./images/Motivation_image_1.jpeg)
 
 # Project Scope
 

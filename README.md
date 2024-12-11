@@ -8,7 +8,7 @@ Video explanation Link: https://vimeo.com/1038191478
 [![Video Title](https://vumbnail.com/1038191478.jpg)](https://vimeo.com/1038191478)
 
 --------------------------------------------------------------
-Click below image or this link for a video Overview 👇 ▶️ 
+Click below image or this link for a dashboard Overview 👇 ▶️ 
 
 Dashboards explanation Link: https://vimeo.com/1038203523?
 

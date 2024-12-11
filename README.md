@@ -11,7 +11,7 @@ The project involves a two fold analysis approach
 
 The system serves two primary analytical purposes:
 
-![Realtime]https://vimeo.com/1038191478?share=copy
+[![Watch the video](https://vimeo.com/1038191478?share=copy)
 
 ### Real-Time Race Replay
 

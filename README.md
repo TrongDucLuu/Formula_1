@@ -6,7 +6,7 @@ Click below image or this link for a video Overview 👇 ▶️
 Video explanation Link: [Click Here ](https://vimeo.com/1038205658)
 
 
-[![Video Title 2](https://vumbnail.com/1038205658_large.jpg)](https://vimeo.com/1038205658)
+[![Video Title 2]([https://vumbnail.com/1038205658_large.jpg](https://i.vimeocdn.com/video/1960356300-4fb448b737533141fb0d2d768d781c74433561ba493a0f3effe977f22f943911-d_295x166?r=pad))](https://vimeo.com/1038205658)
 
 --------------------------------------------------------------
 Click below image or this link for a dashboard Overview 👇 ▶️ 

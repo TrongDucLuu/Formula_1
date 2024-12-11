@@ -2,7 +2,7 @@
 
 # 📖 Project Overview
 Click below for the video 👇
-[View Video on Vimeo](https://vimeo.com/1038191478)
+[Explanation high level video](https://vimeo.com/1038191478)
 
 A real-time Formula 1 telemetry system and historical data analysis system that captures, processes, and visualizes car data during race sessions, enabling both live replay and historical analysis.
 

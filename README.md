@@ -3,7 +3,7 @@
 # 📖 Project Overview
 Click below image or this link for a video Overview 👇 ▶️ 
 
-Video explanation Link: [https://vimeo.com/1038191478](https://vimeo.com/1038205658)
+Video explanation Link: [Click Here ](https://vimeo.com/1038205658)
 
 
 [![Video Title](https://vumbnail.com/1038205658.jpg)](https://vimeo.com/1038205658)
@@ -11,7 +11,7 @@ Video explanation Link: [https://vimeo.com/1038191478](https://vimeo.com/1038205
 --------------------------------------------------------------
 Click below image or this link for a dashboard Overview 👇 ▶️ 
 
-Dashboards explanation Link: https://vimeo.com/1038203523?
+Dashboards explanation Link: [Click Here](https://vimeo.com/1038203523)
 
 [![Video Title](https://vumbnail.com/1038203523.jpg)](https://vimeo.com/1038203523)
 

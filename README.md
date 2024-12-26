@@ -132,7 +132,7 @@ Confluent Kafka hosted on AWS EC2, paired with SingleStore as our operational da
               logger.info(f"Running command: {' '.join(cmd)}")
               subprocess.Popen(cmd)
         
-              redirect_url = f'http://13.60.222.132:3000/d/f1-telemetry/f1-real-time-telemetry?orgId=1&from={start_time.replace("T", " ")}&to={end_time.replace("T", " ")}&timezone=browser&var-driver={driver}&var-session={session}&refresh=1s'
+              redirect_url = f'http://<ip_address>:3000/d/f1-telemetry/f1-real-time-telemetry?orgId=1&from={start_time.replace("T", " ")}&to={end_time.replace("T", " ")}&timezone=browser&var-driver={driver}&var-session={session}&refresh=1s'
         
               return redirect(redirect_url)
         
